@@ -37,7 +37,7 @@
         <div class="relative w-80 h-80">
           <!-- Marco animado -->
           <div class="absolute inset-0 rounded-2xl border border-indigo-500/30 animate-pulse" />
-          <div class="absolute inset-4 rounded-xl bg-gradient-to-br from-indigo-500/10 to-purple-500/10 backdrop-blur-sm flex items-center justify-center">
+          <div class="absolute inset-4 rounded-xl bg-linear-to-br from-indigo-500/10 to-purple-500/10 backdrop-blur-sm flex items-center justify-center">
             <span class="text-gray-500 text-sm tracking-widest">[ tu foto / video ]</span>
           </div>
           <!-- Decoración esquinas -->

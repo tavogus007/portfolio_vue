@@ -1,6 +1,6 @@
 <template>
     <div class="absolute inset-0 z-0 overflow-hidden">
-      <div class="absolute inset-0 bg-gradient-to-br from-gray-950 via-slate-900 to-gray-950" />
+      <div class="absolute inset-0 bg-linear-to-br from-gray-950 via-slate-900 to-gray-950" />
       <div class="orb orb-1" />
       <div class="orb orb-2" />
       <div class="orb orb-3" />
