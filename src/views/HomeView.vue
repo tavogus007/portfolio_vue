@@ -1,17 +1,17 @@
 <template>
-    <div class="flex w-full h-full items-center px-16 gap-12">
+    <div class="flex w-full h-full items-center px-16 gap-12 container">
   
       <!-- IZQUIERDA: Presentación + navegación -->
       <div class="flex flex-col justify-center gap-10 w-1/2">
   
         <!-- Encabezado -->
         <div class="flex flex-col gap-2">
-          <span class="text-indigo-400 text-sm tracking-[0.3em] uppercase">Portafolio</span>
+          <span class="text-indigo-400 text-sm tracking-[0.3em] uppercase title">Portafolio Digital</span>
           <h1 class="text-white text-6xl font-bold leading-tight">
-            Tu Nombre<br>
-            <span class="text-indigo-400">Apellido</span>
-          </h1>
-          <p class="text-gray-400 text-lg mt-2">Desarrollador Full Stack · Diseñador UI</p>
+            Gustavo<br>
+            <span class="text-indigo-400">Gutiérrez</span>
+          </h1> 
+          <p class="text-gray-400 text-lg mt-2">Desarrollador Full Stack</p>
         </div>
   
         <!-- Botones de navegación -->
@@ -62,3 +62,20 @@
     { label: 'Contacto',   view: 'contact'  },
   ]
   </script>
+
+<style scoped>
+
+  .container{
+    padding: 80px;
+  }
+
+  .title{
+    border: solid rgb(219, 219, 219);
+    border-radius: 10px;
+    padding: 100px 20px;
+    text-align: center;
+    display: inline-block;
+    width: auto;
+  }
+
+</style>
