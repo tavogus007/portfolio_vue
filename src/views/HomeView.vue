@@ -1,21 +1,25 @@
 <template>
-    <div class="flex w-full h-full items-center px-16 gap-12 container">
+    <div class="flex flex-col lg:flex-row w-full min-h-screen items-center px-4 sm:px-6 lg:px-16 py-8 lg:py-0 gap-8 justify-center home">
   
       <!-- IZQUIERDA: Presentación + navegación -->
-      <div class="flex flex-col justify-center gap-10 w-1/2">
+      <div class="flex flex-col justify-center gap-8 w-full lg:w-1/2">
   
         <!-- Encabezado -->
-        <div class="flex flex-col gap-2">
-          <span class="text-indigo-400 text-sm tracking-[0.3em] uppercase title">Portafolio Digital</span>
-          <h1 class="text-white text-6xl font-bold leading-tight">
-            Gustavo<br>
-            <span class="text-indigo-400">Gutiérrez</span>
+        <div class="flex flex-col gap-12">
+          <div class="title text-center">
+            <p class="text-blue-400 text-2xl sm:text-3xl lg:text-4xl tracking-[0.3em] uppercase mb-10">SYSTEM ENGINEER</p>
+            <p class="text-blue-400 text-md tracking-[0.3em] uppercase mb-2">fullstack developer</p>
+            <p class="text-indigo-400 text-sm tracking-[0.3em] uppercase mt-5">Digital portfolio</p>   
+          </div>
+          <h1 class="text-white text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">
+            GUSTAVO
+            <span class="text-indigo-400">GUTIÉRREZ</span>
           </h1> 
-          <p class="text-gray-400 text-lg mt-2">Desarrollador Full Stack</p>
+
         </div>
   
         <!-- Botones de navegación -->
-        <nav class="flex flex-col gap-4">
+        <nav class="flex flex-col gap-10">
           <button
             v-for="item in navItems"
             :key="item.view"
@@ -24,7 +28,7 @@
           >
             <!-- Línea indicadora -->
             <span class="h-px bg-indigo-500 transition-all duration-300 ease-out w-8 group-hover:w-16" />
-            <span class="text-gray-400 text-lg font-medium tracking-wide transition-colors duration-300 group-hover:text-white">
+            <span class="text-gray-400 text-4xl font-medium tracking-wide transition-colors duration-300 group-hover:text-white">
               {{ item.label }}
             </span>
           </button>
@@ -33,19 +37,8 @@
       </div>
   
       <!-- DERECHA: Elemento visual (placeholder por ahora) -->
-      <div class="flex items-center justify-center w-1/2 h-full">
-        <div class="relative w-80 h-80">
-          <!-- Marco animado -->
-          <div class="absolute inset-0 rounded-2xl border border-indigo-500/30 animate-pulse" />
-          <div class="absolute inset-4 rounded-xl bg-linear-to-br from-indigo-500/10 to-purple-500/10 backdrop-blur-sm flex items-center justify-center">
-            <span class="text-gray-500 text-sm tracking-widest">[ tu foto / video ]</span>
-          </div>
-          <!-- Decoración esquinas -->
-          <span class="absolute top-0 left-0 w-4 h-4 border-t-2 border-l-2 border-indigo-400 rounded-tl-lg" />
-          <span class="absolute top-0 right-0 w-4 h-4 border-t-2 border-r-2 border-indigo-400 rounded-tr-lg" />
-          <span class="absolute bottom-0 left-0 w-4 h-4 border-b-2 border-l-2 border-indigo-400 rounded-bl-lg" />
-          <span class="absolute bottom-0 right-0 w-4 h-4 border-b-2 border-r-2 border-indigo-400 rounded-br-lg" />
-        </div>
+      <div class="flex items-center justify-center w-full lg:w-1/2 h-64 lg:h-full">
+        <ThreeScene />
       </div>
   
     </div>
@@ -53,29 +46,29 @@
   
   <script setup>
   import { useNavigation } from '../composables/useNavigation'
+  import ThreeScene from '../components/ThreeScene.vue'
   
   const { navigateTo } = useNavigation()
   
   const navItems = [
-    { label: 'Sobre mí',   view: 'about'    },
-    { label: 'Proyectos',  view: 'projects' },
-    { label: 'Contacto',   view: 'contact'  },
+    { label: 'My projects',   view: 'about'    },
+    { label: 'Resume',  view: 'projects' },
+    { label: 'Social media',   view: 'contact'  },
   ]
   </script>
 
 <style scoped>
 
-  .container{
-    padding: 80px;
+  .home{
+    padding: 10px;
   }
 
   .title{
     border: solid rgb(219, 219, 219);
     border-radius: 10px;
-    padding: 100px 20px;
-    text-align: center;
+    padding-top: 10px;
+    padding: 40px;
     display: inline-block;
     width: auto;
   }
-
 </style>

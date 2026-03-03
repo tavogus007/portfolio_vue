@@ -57,4 +57,9 @@ const transitionName   = computed(() =>
 }
 .slide-right-enter-from { opacity: 0; transform: translateX(-50px); }
 .slide-right-leave-to   { opacity: 0; transform: translateX(50px); }
+
+* {
+  font-family: 'goldman', sans-serif;
+}
+
 </style>
