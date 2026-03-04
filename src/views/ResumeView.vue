@@ -11,7 +11,7 @@
             class="flex flex-col lg:flex-row w-full min-h-screen items-center px-4 sm:px-6 lg:px-16 py-8 lg:py-0 gap-8 justify-center home">
             <h1 class="text-white text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">
                 RESUME
-                <span class="text-indigo-400">sume</span>
+                <span class="text-indigo-400">(Comming soon))</span>
             </h1>
     
         </div>
