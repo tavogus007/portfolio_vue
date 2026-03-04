@@ -9,7 +9,7 @@
           <div class="title text-center">
             <p class="text-blue-400 text-2xl sm:text-3xl lg:text-4xl tracking-[0.3em] uppercase mb-10">SYSTEM ENGINEER</p>
             <p class="text-blue-400 text-md tracking-[0.3em] uppercase mb-2">fullstack developer</p>
-            <p class="text-indigo-400 text-sm tracking-[0.3em] uppercase mt-5">Digital portfolio</p>   
+            <p class="text-indigo-400 text-sm tracking-[0.3em] uppercase mt-5">Digital portfolio v1</p>   
           </div>
           <h1 class="text-white text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">
             GUSTAVO
@@ -51,16 +51,16 @@
   const { navigateTo } = useNavigation()
   
   const navItems = [
-    { label: 'My projects',   view: 'about'    },
-    { label: 'Resume',  view: 'projects' },
-    { label: 'Social media',   view: 'contact'  },
+    { label: 'My projects',   view: 'projects'    },  
+    { label: 'Resume',  view: 'resume' },
+    { label: 'Social media',   view: 'social'  },
   ]
   </script>
 
 <style scoped>
 
   .home{
-    padding: 10px;
+    padding: 30px;
   }
 
   .title{
