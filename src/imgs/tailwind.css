@@ -14,3 +14,11 @@
     --breakpoint-lg: 1024px;
     --breakpoint-xl: 1280px;
   }
+
+  .scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
