@@ -1,14 +1,8 @@
 @import "tailwindcss";
 
-@font-face {
-    font-family: 'goldman';
-    src: url('./goldman.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-  }
-
-
   @theme {
+    --font-goldman: 'Goldman', sans-serif;
+
     --breakpoint-sm: 640px;
     --breakpoint-md: 768px;
     --breakpoint-lg: 1024px;
