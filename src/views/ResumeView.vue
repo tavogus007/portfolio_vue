@@ -3,7 +3,6 @@
         
         <button @click="navigateTo('home')"
             class="fixed lg:absolute top-8 left-4 sm:left-8 lg:left-16 flex items-center gap-3 text-gray-500 hover:text-white transition-colors duration-300 z-10 group">
-            <!-- Línea decorativa (opcional, para mantener estilo con el menú) -->
             <span class="h-px bg-indigo-500 transition-all duration-300 ease-out w-8 group-hover:w-12" />
             <span class="text-sm tracking-widest uppercase">Volver</span>
         </button>

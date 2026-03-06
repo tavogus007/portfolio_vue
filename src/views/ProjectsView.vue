@@ -1,7 +1,7 @@
 <template>
   <div class="relative w-full min-h-screen text-white pt-32 pb-24 flex justify-center home">
     <button @click="navigateTo('home')"
-      class="fixed top-8 left-8 flex items-center gap-3 text-gray-400 hover:text-white transition-colors duration-300 z-50 group">
+      class="fixed top-8 left-4 sm:left-8 lg:left-16 flex items-center gap-3 text-gray-500 hover:text-white transition-colors duration-300 z-50 group">
       <span class="h-px bg-indigo-500 transition-all duration-300 ease-out w-8 group-hover:w-12" />
       <span class="text-sm tracking-widest uppercase">Volver</span>
     </button>
@@ -220,14 +220,15 @@
       <!-- ========================= -->
       <h3 class="text-2xl font-bold py-2">Personal projects</h3>
 
-      <section class="flex flex-col gap-2 w-full">  
+      <section class="flex flex-col gap-2 w-full">
         <div class="relative w-full overflow-x-auto pb-6 custom-scrollbar">
           <div class="flex gap-3 w-full scroll-smooth p-4">
             <!-- CARD 1 -->
             <div class="shrink-0 w-70 sm:w-[320px] bg-white/5 backdrop-blur-xl p-3 rounded-2xl border border-white/10
                   transition-all duration-500 hover:scale-[1.02] hover:shadow-[0_0_30px_rgba(99,102,241,0.25)] gap-3">
               <img :src="chatbot1" alt="chatbot1"
-                class="rounded-3xl w-full h-44 object-cover mb-3 border border-purple-400/40 cursor-pointer" @click="selectedImg = chatbot1"/>
+                class="rounded-3xl w-full h-44 object-cover mb-3 border border-purple-400/40 cursor-pointer"
+                @click="selectedImg = chatbot1" />
               <h4 class="text-2xl">Chatbot - Meta</h4>
               <div class="p-1">
                 <p class="text-gray-300 leading-relaxed">
@@ -235,7 +236,8 @@
                 </p>
                 <p class="text-sm text-gray-400 underline pb-1">Techs</p>
                 <div class="flex flex-wrap gap-1 p-1">
-                  <span class="w-fit px-3 py-1 bg-indigo-500/20 text-indigo-400 rounded-full text-sm features">Node</span>
+                  <span
+                    class="w-fit px-3 py-1 bg-indigo-500/20 text-indigo-400 rounded-full text-sm features">Node</span>
                   <span
                     class="w-fit px-3 py-1 bg-blue-500/20 text-blue-400 rounded-full text-sm features">JavaScript</span>
                   <span class="w-fit px-3 py-1 bg-blue-500/20 text-blue-400 rounded-full text-sm features">Meta
@@ -253,7 +255,8 @@
             <div class="shrink-0 w-70 sm:w-[320px] bg-white/5 backdrop-blur-xl p-3 rounded-2xl border border-white/10
                   transition-all duration-500 hover:scale-[1.02] hover:shadow-[0_0_30px_rgba(99,102,241,0.25)] gap-3">
               <img :src="chatbot2" alt="chatbot2"
-                class="rounded-3xl w-full h-44 object-cover mb-3 border border-purple-400/40 cursor-pointer" @click="selectedImg = chatbot2"/>
+                class="rounded-3xl w-full h-44 object-cover mb-3 border border-purple-400/40 cursor-pointer"
+                @click="selectedImg = chatbot2" />
               <h4 class="text-2xl">Chatbot Telegram - BotFather</h4>
               <div class="p-1">
                 <p class="text-gray-300 leading-relaxed">
@@ -261,7 +264,8 @@
                 </p>
                 <p class="text-sm text-gray-400 underline pb-1">Techs</p>
                 <div class="flex flex-wrap gap-1 p-1">
-                  <span class="w-fit px-3 py-1 bg-blue-500/20 text-blue-400 rounded-full text-sm features">BotFather</span>
+                  <span
+                    class="w-fit px-3 py-1 bg-blue-500/20 text-blue-400 rounded-full text-sm features">BotFather</span>
                   <span class="w-fit px-3 py-1 bg-blue-500/20 text-blue-400 rounded-full text-sm features">n8n</span>
                 </div>
                 <div class="flex justify-end gap-4">
@@ -270,10 +274,10 @@
                     Documentation
                   </a>
                 </div>
-                </div>
+              </div>
             </div>
 
-             <!-- CARD 3 -->
+            <!-- CARD 3 -->
             <div class="shrink-0 w-70 sm:w-[320px] bg-white/5 backdrop-blur-xl p-3 rounded-2xl border border-white/10
                   transition-all duration-500 hover:scale-[1.02] hover:shadow-[0_0_30px_rgba(99,102,241,0.25)] gap-3">
               <img src="../assets/imgs/workflow1.png" alt="workflow1"
@@ -293,7 +297,7 @@
                     Documentation
                   </a>
                 </div>
-                </div>
+              </div>
             </div>
 
             <!-- CARD 4 -->
@@ -316,7 +320,7 @@
                     Documentation
                   </a>
                 </div>
-                </div>
+              </div>
             </div>
 
           </div>
@@ -324,23 +328,22 @@
 
       </section>
     </div>
-  </div>
-  <!-- LIGHTBOX -->
-<Transition name="fade">
-  <div v-if="selectedImg"
-    class="fixed inset-0 z-50 flex items-center justify-center bg-black/70 backdrop-blur-sm"
-    @click="selectedImg = null">
-    <Transition name="zoom">
-      <img v-if="selectedImg" :src="selectedImg"
-        class="max-w-[90vw] max-h-[85vh] rounded-3xl border border-purple-400/40 shadow-[0_0_60px_rgba(99,102,241,0.3)]"
-        @click.stop />
+    <!-- LIGHTBOX -->
+    <Transition name="fade">
+      <div v-if="selectedImg" class="fixed inset-0 z-50 flex items-center justify-center bg-black/70 backdrop-blur-sm"
+        @click="selectedImg = null">
+        <Transition name="zoom">
+          <img v-if="selectedImg" :src="selectedImg"
+            class="max-w-[90vw] max-h-[85vh] rounded-3xl border border-purple-400/40 shadow-[0_0_60px_rgba(99,102,241,0.3)]"
+            @click.stop />
+        </Transition>
+      </div>
     </Transition>
   </div>
-</Transition>
 </template>
 
 <script setup>
-import { useNavigation } from '../composables/useNavigation'
+import { useNavigation } from "../composables/useNavigation"
 import chatbot1 from '../assets/imgs/chatbot1.png'
 import chatbot2 from '../assets/imgs/chatbot2.png'
 import { ref } from 'vue'
@@ -356,30 +359,41 @@ const selectedImg = ref(null)
 .features {
   padding: 5px 10px;
 }
+
 .custom-scrollbar::-webkit-scrollbar {
   height: 4px;
 }
+
 .custom-scrollbar::-webkit-scrollbar-track {
   background: transparent;
 }
+
 .custom-scrollbar::-webkit-scrollbar-thumb {
   background: rgba(99, 102, 241, 0.4);
   border-radius: 999px;
 }
+
 .custom-scrollbar::-webkit-scrollbar-thumb:hover {
   background: rgba(99, 102, 241, 0.7);
 }
-.fade-enter-active, .fade-leave-active {
+
+.fade-enter-active,
+.fade-leave-active {
   transition: opacity 0.3s ease;
 }
-.fade-enter-from, .fade-leave-to {
+
+.fade-enter-from,
+.fade-leave-to {
   opacity: 0;
 }
 
-.zoom-enter-active, .zoom-leave-active {
+.zoom-enter-active,
+.zoom-leave-active {
   transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease;
 }
-.zoom-enter-from, .zoom-leave-to {
+
+.zoom-enter-from,
+.zoom-leave-to {
   transform: scale(0.85);
   opacity: 0;
 }
