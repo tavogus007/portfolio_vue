@@ -280,7 +280,7 @@
             <!-- CARD 3 -->
             <div class="shrink-0 w-70 sm:w-[320px] bg-white/5 backdrop-blur-xl p-3 rounded-2xl border border-white/10
                   transition-all duration-500 hover:scale-[1.02] hover:shadow-[0_0_30px_rgba(99,102,241,0.25)] gap-3">
-              <img src="../assets/imgs/workflow1.png" alt="workflow1"
+              <img src="" alt="workflow1"
                 class="rounded-3xl w-full h-44 object-cover mb-3 border border-purple-400/40" />
               <h4 class="text-2xl">n8n workflow 1</h4>
               <div class="p-1">
@@ -303,7 +303,7 @@
             <!-- CARD 4 -->
             <div class="shrink-0 w-70 sm:w-[320px] bg-white/5 backdrop-blur-xl p-3 rounded-2xl border border-white/10
                   transition-all duration-500 hover:scale-[1.02] hover:shadow-[0_0_30px_rgba(99,102,241,0.25)] gap-3">
-              <img src="../assets/imgs/workflow1.png" alt="workflow2"
+              <img src="" alt="workflow2"
                 class="rounded-3xl w-full h-44 object-cover mb-3 border border-purple-400/40" />
               <h4 class="text-2xl">n8n workflow 2</h4>
               <div class="p-1">
