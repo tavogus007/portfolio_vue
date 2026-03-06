@@ -41,8 +41,6 @@ const transitionName   = computed(() =>
 </script>
 
 <style>
-/* Reset base */
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 /* Transición hacia adelante (nuevo contenido entra por la derecha) */
 .slide-left-enter-active,
