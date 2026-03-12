@@ -1,32 +1,63 @@
 <template>
-    <div class="relative w-full min-h-screen home">
-        
-        <button @click="navigateTo('home')"
-            class="fixed lg:absolute top-8 left-4 sm:left-8 lg:left-16 flex items-center gap-3 text-gray-500 hover:text-white transition-colors duration-300 z-10 group">
-            <!-- Línea decorativa (opcional, para mantener estilo con el menú) -->
-            <span class="h-px bg-indigo-500 transition-all duration-300 ease-out w-8 group-hover:w-12" />
-            <span class="text-sm tracking-widest uppercase">Volver</span>
-        </button>
-        <div
-            class="flex flex-col lg:flex-row w-full min-h-screen items-center px-4 sm:px-6 lg:px-16 py-8 lg:py-0 gap-8 justify-center home">
-            <h1 class="text-white text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">
-                SOCIAL MEDIA
-                <span class="text-indigo-400">(Comming soon)</span>
-            </h1>
-    
-        </div>
+  <div class="flex flex-col gap-6 w-full h-full justify-center">
+
+    <!-- Professional -->
+    <div class="flex flex-col gap-3">
+      <p class="text-xs text-gray-500 uppercase tracking-widest pl-1">Professional</p>
+      <div class="flex flex-col gap-3">
+        <a v-for="link in professionalLinks" :key="link.id"
+          :href="link.url" target="_blank"
+          :class="[
+            'flex items-center gap-4 p-4 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm',
+            'transition-all duration-300 group',
+            link.color
+          ]">
+          <img :src="link.logo" :alt="link.label"
+            class="w-10 h-10 rounded-xl object-contain bg-white p-1"
+            @error="e => e.target.style.display='none'" />
+          <div class="flex flex-col">
+            <span class="text-white font-semibold group-hover:text-white transition-colors">{{ link.label }}</span>
+            <span class="text-xs text-gray-400">{{ link.description }}</span>
+          </div>
+          <svg class="ml-auto w-4 h-4 text-gray-600 group-hover:text-gray-300 transition-colors"
+            fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+          </svg>
+        </a>
+      </div>
     </div>
 
+    <!-- Learning -->
+    <div class="flex flex-col gap-3">
+      <p class="text-xs text-gray-500 uppercase tracking-widest pl-1">Learning</p>
+      <div class="flex flex-col gap-3">
+        <a v-for="link in learningLinks" :key="link.id"
+          :href="link.url" target="_blank"
+          :class="[
+            'flex items-center gap-4 p-4 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm',
+            'transition-all duration-300 group',
+            link.color
+          ]">
+          <img :src="link.logo" :alt="link.label"
+            class="w-10 h-10 rounded-xl object-contain bg-white p-1"
+            @error="e => e.target.style.display='none'" />
+          <div class="flex flex-col">
+            <span class="text-white font-semibold group-hover:text-white transition-colors">{{ link.label }}</span>
+            <span class="text-xs text-gray-400">{{ link.description }}</span>
+          </div>
+          <svg class="ml-auto w-4 h-4 text-gray-600 group-hover:text-gray-300 transition-colors"
+            fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+          </svg>
+        </a>
+      </div>
+    </div>
 
+  </div>
 </template>
 
 <script setup>
-import { useNavigation } from "../composables/useNavigation";
-const { navigateTo } = useNavigation()
+import { professionalLinks, learningLinks } from '../data/social'
 </script>
-<style scoped>
-.home {
-    padding: 30px;
-    /* Ajusta según necesites, aunque el botón usa posicionamiento fijo/absoluto */
-}
-</style>
