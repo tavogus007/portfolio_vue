@@ -1,8 +1,10 @@
+import cv from '../assets/pdf/CV_Gutierrez_EN.pdf'
+
 export const aboutMe = {
   name: 'Gustavo Gutierrez',
   role: 'Software engineer',
   bio: 'This website shows a little bit about me, my experience, my skills, and my education in a summarized way. You can review my CV for more accurate information. I hope you enjoy it 😄',
-  cvPath: '/src/assets/pdf/CV_Gutierrez_EN.pdf',
+  cvPath: cv,
 }
 
 export const experience = [

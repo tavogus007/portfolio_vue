@@ -1,10 +1,16 @@
+import portfolio from '../assets/imgs/portfolio.png'
+import vfri from '../assets/imgs/vfri.png'
+import siai from '../assets/imgs/siai.png'
+import chatbot1 from '../assets/imgs/chatbot1.png'
+import chatbot2 from '../assets/imgs/chatbot2.png'
+
 // ─── Featured Projects (imagen fija) ─────────────────────────────────────────
 export const featuredProjects = [
   {
     id: 'portfolio',
     title: 'Personal Portfolio v1.0',
     description: 'This portfolio was developed using Vue.js and Tailwind CSS, showcasing my projects and skills in a visually appealing way.',
-    image: '/src/assets/imgs/portfolio.png',
+    image: portfolio,
     docUrl: '#',
     techs: [
       { label: 'Vue3.js',     color: 'indigo' },
@@ -16,7 +22,7 @@ export const featuredProjects = [
     id: 'victoria-falls',
     title: 'Victoria Falls',
     description: 'Responsable for the frontend development of the website for the institute.',
-    image: '/src/assets/imgs/vfri.png',
+    image: vfri,
     liveUrl: 'https://victoriafalls.netlify.app/',
     docUrl: '#',
     techs: [
@@ -29,7 +35,7 @@ export const featuredProjects = [
     id: 'siai',
     title: 'SIAI',
     description: 'Contributed to the development of the SIAI system, including feature implementation, testing, documentation, and full-stack support.',
-    image: '/src/assets/imgs/siai.png',
+    image: siai,
     liveUrl: 'https://siai.produccion.gob.bo/',
     docUrl: '#',
     techs: [
@@ -93,7 +99,7 @@ export const personalProjects = [
     id: 'chatbot-meta',
     title: 'Chatbot - Meta',
     description: 'The chatbot was developed using the Meta services.',
-    image: '/src/assets/imgs/chatbot1.png',
+    image: chatbot1,
     docUrl: '#',
     techs: [
       { label: 'Node',          color: 'indigo' },
@@ -105,7 +111,7 @@ export const personalProjects = [
     id: 'chatbot-telegram',
     title: 'Chatbot Telegram - BotFather',
     description: 'The chatbot was developed using BotFather for Telegram.',
-    image: '/src/assets/imgs/chatbot2.png',
+    image: chatbot2,
     docUrl: '#',
     techs: [
       { label: 'BotFather', color: 'blue' },
@@ -116,7 +122,7 @@ export const personalProjects = [
     id: 'n8n-workflow-1',
     title: 'n8n Workflow 1',
     description: 'Automated workflow with multiple integrations.',
-    image: '/src/assets/imgs/workflow1.png',
+    image: '',
     docUrl: '#',
     techs: [
       { label: 'n8n', color: 'blue' },
@@ -126,7 +132,7 @@ export const personalProjects = [
     id: 'n8n-workflow-2',
     title: 'n8n Workflow 2',
     description: 'Automated workflow with multiple integrations.',
-    image: '/src/assets/imgs/workflow1.png',
+    image: '',
     docUrl: '#',
     techs: [
       { label: 'n8n', color: 'blue' },
