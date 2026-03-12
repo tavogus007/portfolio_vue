@@ -1,5 +1,5 @@
 <template>
-  <div class="relative w-full min-h-screen text-white pt-16 pb-24 flex justify-center home">
+  <div class="relative w-full min-h-screen text-white pt-16 pb-24 flex justify-center">
 
     <!-- BACK BUTTON -->
     <BackNavbar />
