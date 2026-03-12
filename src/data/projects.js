@@ -1,6 +1,18 @@
 // ─── Featured Projects (imagen fija) ─────────────────────────────────────────
 export const featuredProjects = [
   {
+    id: 'portfolio',
+    title: 'Personal Portfolio v1.0',
+    description: 'This portfolio was developed using Vue.js and Tailwind CSS, showcasing my projects and skills in a visually appealing way.',
+    image: '/src/assets/imgs/portfolio.png',
+    docUrl: '#',
+    techs: [
+      { label: 'Vue3.js',     color: 'indigo' },
+      { label: 'Netlify',     color: 'blue' },
+      { label: 'Tailwind CSS', color: 'blue'   },
+    ],
+  },
+    {
     id: 'victoria-falls',
     title: 'Victoria Falls',
     description: 'Responsable for the frontend development of the website for the institute.',

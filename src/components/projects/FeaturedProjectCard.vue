@@ -13,7 +13,7 @@
 
         <p class="text-gray-300 leading-relaxed">{{ project.description }}</p>
 
-        <div class="flex justify-center">
+        <div v-if="project.liveUrl" class="flex justify-center">
           <a :href="project.liveUrl" target="_blank"
             class="w-fit px-6 py-2 bg-emerald-600 rounded-xl hover:bg-emerald-500 transition-all duration-300 features">
             Visit Live System

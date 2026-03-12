@@ -1,12 +1,8 @@
 <template>
-  <div class="relative w-full min-h-screen text-white pt-32 pb-24 flex justify-center home">
+  <div class="relative w-full min-h-screen text-white pt-16 pb-24 flex justify-center home">
 
     <!-- BACK BUTTON -->
-    <button @click="navigateTo('home')"
-      class="fixed top-8 left-4 sm:left-8 lg:left-16 flex items-center gap-3 text-gray-500 hover:text-white transition-colors duration-300 z-50 group">
-      <span class="h-px bg-indigo-500 transition-all duration-300 ease-out w-8 group-hover:w-12" />
-      <span class="text-sm tracking-widest uppercase">Volver</span>
-    </button>
+    <BackNavbar />
 
     <div class="w-full max-w-6xl flex flex-col gap-3 px-6 sm:px-10 lg:px-16">
 
@@ -36,6 +32,7 @@ import { featuredProjects, mecProjects, personalProjects } from '../data/project
 import FeaturedProjectCard from '../components/projects/FeaturedProjectCard.vue'
 import VideoProjectCard from '../components/projects/VideoProjectCard.vue'
 import PersonalProjectsCarousel from '../components/projects/PersonalProjectsCarousel.vue'
+import BackNavbar from '../components/BackNavbar.vue'
 
 const { navigateTo } = useNavigation()
 </script>
