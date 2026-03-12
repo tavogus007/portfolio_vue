@@ -4,7 +4,7 @@
     <!-- BACK BUTTON -->
     <BackNavbar />
 
-    <div class="w-full max-w-6xl flex flex-col gap-3 px-6 sm:px-10 lg:px-16">
+    <div class="w-full max-w-[90rem] flex flex-col gap-3 px-6 sm:px-10 lg:px-16">
 
       <!-- ── Featured Projects ── -->
       <h2 class="text-3xl font-semibold tracking-wide text-indigo-400">Featured Projects</h2>
