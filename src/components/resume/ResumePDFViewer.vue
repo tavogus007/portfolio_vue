@@ -52,6 +52,10 @@
         type="application/pdf"
       />
     </div>
+    <p class="text-xs text-gray-500 text-center mt-1">
+  Para acceder a los enlaces del CV, 
+  <a :href="cvPath" target="_blank" class="text-indigo-400 hover:text-indigo-300 underline">ábrelo en nueva pestaña</a>
+</p>
 
     <!-- PDF IFRAME (expandido - fullscreen) -->
     <Transition name="fade">
@@ -74,6 +78,7 @@
           type="application/pdf"
         />
       </div>
+      
     </Transition>
 
   </div>
