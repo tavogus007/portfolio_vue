@@ -60,7 +60,7 @@
 <style scoped>
 
   .home{
-    padding: 30px;
+    padding: 80px;
   }
 
   .title{
