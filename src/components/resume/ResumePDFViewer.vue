@@ -53,8 +53,8 @@
       />
     </div>
     <p class="text-xs text-gray-500 text-center mt-1">
-  Para acceder a los enlaces del CV, 
-  <a :href="cvPath" target="_blank" class="text-indigo-400 hover:text-indigo-300 underline">ábrelo en nueva pestaña</a>
+  To access the links of the CV, 
+  <a :href="cvPath" target="_blank" class="text-indigo-400 hover:text-indigo-300 underline">open it in a new window</a>
 </p>
 
     <!-- PDF IFRAME (expandido - fullscreen) -->

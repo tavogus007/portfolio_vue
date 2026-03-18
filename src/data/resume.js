@@ -47,6 +47,24 @@ export const education = [
     institution: 'Universidad Mayor de San Andres — La Paz',
     period: '2021 — 2025',
   },
+  {
+    id: 'edu-2',
+    degree: 'English Course at CBA',
+    institution: 'Centro Boliviano Americano (CBA)',
+    period: '2019 — 2021',
+  },
+    {
+    id: 'edu-3',
+    degree: 'Teaching assistant training at EPA',
+    institution: 'Escuela Pedagógica Abierta (EPA)',
+    period: '2023',
+  },
+  {
+    id: 'edu-4',
+    degree: 'Continuing education',
+    institution: 'Platzi | Udemy | Scrimba',
+    period: '2025 - present',
+  },
 ]
 
 export const skills = [
