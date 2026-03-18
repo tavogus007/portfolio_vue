@@ -1,10 +1,12 @@
 import cv from '../assets/pdf/CV_Gutierrez_EN.pdf'
+import cv_es from '../assets/pdf/CV_Gutierrez_ES.pdf'
 
 export const aboutMe = {
   name: 'Gustavo Gutierrez',
   role: 'Software engineer',
   bio: 'This website shows a little bit about me, my experience, my skills, and my education in a summarized way. You can review my CV for more accurate information. I hope you enjoy it 😄',
   cvPath: cv,
+  cvPathEs: cv_es, 
 }
 
 export const experience = [
@@ -46,6 +48,24 @@ export const education = [
     degree: 'Bachelor’s Degree in Computer Science,\nSpecialization: Software Engineering',
     institution: 'Universidad Mayor de San Andres — La Paz',
     period: '2021 — 2025',
+  },
+  {
+    id: 'edu-2',
+    degree: 'English Course at CBA',
+    institution: 'Centro Boliviano Americano (CBA)',
+    period: '2019 — 2021',
+  },
+    {
+    id: 'edu-3',
+    degree: 'Teaching assistant training at EPA',
+    institution: 'Escuela Pedagógica Abierta (EPA)',
+    period: '2023',
+  },
+  {
+    id: 'edu-4',
+    degree: 'Continuing education',
+    institution: 'Platzi | Udemy | Scrimba',
+    period: '2025 - present',
   },
 ]
 

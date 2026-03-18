@@ -22,7 +22,7 @@
 
         <!-- DERECHA — PDF viewer -->
         <div class="flex flex-col lg:h-full lg:-mr-16 lg:pr-[25px]">
-          <ResumePDFViewer :cv-path="aboutMe.cvPath" />
+          <ResumePDFViewer :cv-path="aboutMe.cvPath" :cv-path-es="aboutMe.cvPathEs" />
         </div>
 
       </div>

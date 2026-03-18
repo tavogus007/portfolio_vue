@@ -22,13 +22,17 @@
       <h3 class="text-2xl font-bold py-2">Personal Projects</h3>
       <PersonalProjectsCarousel :projects="personalProjects" />
 
+       <!-- ── University ── -->
+      <h3 class="text-2xl font-bold py-2">Universitary track (teaching assistant)</h3>
+      <PersonalProjectsCarousel :projects="universityTrack" />
+
     </div>
   </div>
 </template>
 
 <script setup>
 import { useNavigation } from '../composables/useNavigation'
-import { featuredProjects, mecProjects, personalProjects } from '../data/projects.js'
+import { featuredProjects, mecProjects, personalProjects, universityTrack } from '../data/projects.js'
 import FeaturedProjectCard from '../components/projects/FeaturedProjectCard.vue'
 import VideoProjectCard from '../components/projects/VideoProjectCard.vue'
 import PersonalProjectsCarousel from '../components/projects/PersonalProjectsCarousel.vue'
