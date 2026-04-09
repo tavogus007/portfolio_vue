@@ -59,7 +59,7 @@ const transitionName   = computed(() =>
 .slide-right-leave-to   { opacity: 0; transform: translateX(50px); }
 
 * {
-  font-family: 'goldman', sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 
 </style>

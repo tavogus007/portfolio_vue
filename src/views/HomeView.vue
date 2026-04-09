@@ -6,10 +6,10 @@
 
       <!-- Encabezado -->
       <div class="flex flex-col gap-12">
-        <div class="title text-center">
-          <p class="text-blue-400 text-2xl sm:text-3xl lg:text-4xl tracking-[0.3em] uppercase mb-10">SYSTEM ENGINEER</p>
-          <p class="text-blue-400 text-md tracking-[0.3em] uppercase mb-2">fullstack developer</p>
-          <p class="text-indigo-400 text-2sm tracking-[0.3em] uppercase mt-5">Digital portfolio v1.0</p>
+        <div class="title text-center w-full">
+          <p class="text-blue-400 text-xl sm:text-2xl lg:text-4xl tracking-[0.15em] sm:tracking-[0.3em] uppercase mb-10 break-words">SYSTEM ENGINEER</p>
+          <p class="text-blue-400 text-sm sm:text-sm tracking-[0.15em] sm:tracking-[0.3em] uppercase mb-2">fullstack developer</p>
+          <p class="text-indigo-400 text-sm sm:text-sm tracking-[0.15em] sm:tracking-[0.3em] uppercase mt-5">Digital portfolio v1.0</p>
         </div>
         <h1 class="text-white text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">
           GUSTAVO
@@ -37,7 +37,10 @@
     </div>
 
     <!-- DERECHA: ThreeScene o SocialMediaPanel -->
-    <div class="flex items-center justify-center w-full lg:w-1/2 h-64 lg:h-full">
+    <div :class="[
+      'flex items-center justify-center w-full lg:w-1/2 lg:h-full',
+      activePanel === 'social' ? 'h-auto py-4 pb-16' : 'h-64'
+    ]">
       <Transition name="panel" mode="out-in">
 
         <!-- Social Media Panel -->
@@ -90,13 +93,18 @@ function handleNav(view) {
   padding: 80px;
 }
 
+@media (max-width: 1024px) {
+  .home {
+    padding: 20px;
+  }
+}
+
 .title {
   border: solid rgb(219, 219, 219);
   border-radius: 10px;
-  padding-top: 10px;
   padding: 40px;
-  display: inline-block;
-  width: auto;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 /* Transición suave entre ThreeScene y SocialMediaPanel */
